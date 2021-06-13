@@ -1,0 +1,143 @@
+// 首页及定制页的公共样式文件
+:root {
+    width: 100%;
+    height: 100%;
+    font-size: 13.3333333vw;
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        overflow: hidden;
+        font-size: 0.3rem;
+        .pageContain {
+            .page {
+                position: relative;
+                .g-btn {
+                    position: absolute;
+                    left: 50%;
+                    top: 7.4rem;
+                    text-align: center;
+                    line-height: 1.06rem;
+                    transform: translateX(-50%);
+                    min-width: 2rem;
+                    height: 1.06rem;
+                    outline: none;
+                    border: none;
+                    white-space: nowrap;
+                    color: #fff;
+                    padding: 0 0.26rem;
+                    background: url(../assets/btn-left.png) no-repeat left top / 0.28rem 1.06rem,
+                                url(../assets/btn-right.png) no-repeat right top / 0.28rem 1.06rem,
+                                url(../assets/btn-mid.png) repeat-x left top / 0.05rem 1.06rem;
+                    box-shadow: 0 8px 15px #333;
+                }
+                .hand {
+                    width: 0.83rem;
+                    height: 0.64rem;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 0.3rem;
+                    opacity: 0.6;
+                    background: url(../assets/up.png) no-repeat left top / 100% 100%;
+                }
+                .g-tap {
+                    width: 4.47rem;
+                    height: 2.96rem;
+                    background: url(../assets/tape.png) no-repeat left top / 100% 100%;
+                    position: absolute;
+                    left:50%;
+                    transform: translateX(-50%); 
+                    margin-top: 1rem;
+                    &::before,
+                    &::after {
+                        content: '';
+                        width: 0.65rem;
+                        height: 0.65rem;
+                        position: absolute;
+                        top: 0.97rem;
+                        background: url(../assets/tape-inner.png) no-repeat left top / 100% 100%;
+                    }
+                    &::before {
+                        left: 1.029rem;
+                    }
+                    &::after {
+                        right: 1.029rem;
+                    }
+                    &.playing {
+                        &::before,
+                        &::after {
+                            animation: playing 1s infinite;
+                        }
+                    }
+                }
+                .g-paper {
+                    width: 4.54rem;
+                    position: absolute;
+                    left:50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    padding: 0.22rem 0;
+                    background: url(../assets/paper-top.png) no-repeat left top / 4.54rem 0.25rem padding-box,
+                                url(../assets/paper-bottom.png) no-repeat left bottom / 4.54rem 0.25rem padding-box,
+                                url(../assets/paper-mid.png) repeat-y left top / 100% 100% content-box; 
+                }
+                
+            }
+        }
+        .g-seal {
+            width: 1.03rem;
+            height: 1.07rem;
+            position: absolute;
+            top: 91%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: url(../assets/seal.png) no-repeat left top / 100% 100%;
+        }
+        .music {
+            width: 0.59rem;
+            height: 0.59rem;
+            position: fixed;
+            top: 0.7rem;
+            right: 0.4rem;
+            background: url(../assets/music.png) no-repeat left top / 100% 100%;
+            z-index: 1;
+            transition: .3s;
+            &.music-close {
+                opacity: 0.3;
+            }
+        }
+        .g-modal {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .7);
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .loading {
+                width: 5rem;
+                height: 5rem;
+                background: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+        }
+    }
+}
+@keyframes playing {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

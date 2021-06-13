@@ -1,0 +1,118 @@
+// 首页样式文件
+.pageContain {
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    .page {
+        width: 100%;
+        height: 100%;
+        &:nth-of-type(1) {
+           background: url('../assets/city.png') no-repeat left bottom / 7.5rem 4.1rem,
+                       url('../assets/cover-bg.jpg') no-repeat left top / 7.5rem 13.34rem #ae0806;
+        }
+        &:nth-of-type(2) {
+            background: url(../assets/letter-edge.png) repeat-x left top / 1.2rem 0.67rem,
+                        url(../assets/water-line.png) no-repeat right top / 1.78rem 1.49rem,
+                        url(../assets/letter-bg.png) left top / 7.5rem 0.8rem;
+            .g-btn {
+                top: 26% !important; 
+            }
+            .note {
+                width: 5.6rem;
+                position: absolute;
+                top: 6.3rem;
+                bottom: 1.3rem;
+                left: 50%;
+                transform: translate(-50%);
+                background: #e8d7c6;
+                font-size: 0.35rem;
+                border-radius: 5px;
+                box-shadow: 3px 5px 10px rgba(0,0,0,.5);
+                text-align: center;
+                overflow: hidden;
+                padding: 35px 0;
+                box-sizing: border-box;
+                word-break: break-word;
+                &::before {
+                    width: 0.43rem;
+                    height: 0.8rem;
+                    content: '';
+                    background: url(../assets/note-attach.png) no-repeat left top / 100% 100%;
+                    position: absolute;
+                    left: 0.4rem;
+                    top: -0.1rem;
+                }
+                pre {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0px;
+                    overflow: scroll;
+                    padding: 35px 0;
+                    box-sizing: border-box;
+                    line-height: 30px;
+                }
+            }
+        }
+        &:nth-of-type(3) {
+            background: url(../assets/letter-edge.png) repeat-x left top / 1.2rem 0.67rem,
+                        url(../assets/water-line.png) no-repeat right top / 1.78rem 1.49rem,
+                        url(../assets/letter-bg.png) left top / 7.5rem 0.8rem;
+            .g-paper {
+                top: 55% !important;
+                .paper-content {
+                    width: 3.97rem;
+                    height: 0.79rem;
+                    background: url(../assets/shaken.png) no-repeat left top / 100% 100%;
+                }
+            }
+            .label {
+                width: 3.2rem;
+                height: 4.92rem;
+                background: url(../assets/bless-label.png) no-repeat left top / 100% 100%;
+                position: absolute;
+                top: 3rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &>.g-btn {
+                top: 82% !important;
+            }
+        
+        }
+        
+    }
+}
+.g-modal {
+    .bless-card {
+        width: 4.95rem;
+        height: 7.26rem;
+        background: url(../assets/bless-card-slogan.png) no-repeat center 0.3rem / 4.09rem 0.41rem,
+                    url(../assets/letter-bg.png) repeat-y left top / 7.5rem 0.8rem;
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 4rem;
+            max-width: 4.26rem;
+            max-height: 4.34rem;
+        }
+        .g-seal {
+            top: 82% !important;
+        }
+        .close {
+            width: 0.63rem;
+            height: 1.19rem;
+            background: url(../assets/bless-card-close.png) no-repeat left top / 100%;
+            position: absolute;
+            top: 100%;
+            .close-btn {
+                border-radius: 50%;
+                width: 0.64rem;
+                height: 0.64rem;
+                margin-top: 0.55rem;
+            }
+        }
+    }
+}
