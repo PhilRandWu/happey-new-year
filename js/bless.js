@@ -300,6 +300,7 @@ var page3 = {
     musicNext: $(".page3 .arrow-right"), //下一曲按钮
     musicText: $(".page3 .bg-music"), //背景音乐文本
     audBg: $("#audBg"), //背景音乐音频元素
+    page3Banner: $(".page3 .banner")
   },
   // 背景音乐名称
   bgMusicNames: ["春节序曲1", "春节序曲2", "春节序曲3", "辞旧迎新", "财源滚滚"],
@@ -397,6 +398,9 @@ var page3 = {
     };
     // 4. 完成并分享按钮事件
     this.doms.btnFinish.onclick = function () {
+      // 关闭音乐选择
+      // console.log(page3.doms.page3Banner);
+      page3.doms.page3Banner.remove();
       page3.showShareArea();
     };
   },
