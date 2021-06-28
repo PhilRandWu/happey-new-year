@@ -102,7 +102,7 @@ function renderData (data) {
     }
     loadingHidden();
     window.addEventListener('shaken',function () {
-        // console.log('shaken');
+        console.log('shaken');
         if(!alert) {
             alertCard();
             shaken.currentTime = 0;
@@ -120,7 +120,9 @@ function renderData (data) {
     //         alertCard();
     //         shaken.currentTime = 0;
     //         shaken.play();
-    //         closeCard();
+    //         setTimeout(function () {
+    //             closeCard();
+    //         },500)
     //     }
     // })
     
@@ -167,7 +169,7 @@ function renderData (data) {
     // 点击跳转定制页面
     var blessHtml = document.querySelector('.blessHtml');
     blessHtml.onclick = function () {
-        var newseach = location.search.slice(1) || '5fe1a84e90eb6c3c4e8d2102'
-        location.href = 'bless.html?' + newseach 
+        var newseach = location.search.slice(1) || '5fe1a84e90eb6c3c4e8d2102';
+        location.href = 'bless.html?' + newseach;
     }
 }

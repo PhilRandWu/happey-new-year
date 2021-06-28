@@ -3,7 +3,7 @@ function toPage(index) {
   pageContainer.style.marginLeft = `-${7.5 * index}rem`;
 }
 
-toPage(1);
+toPage(0);
 var page1 = {
   doms: {
     txtAuthor: $('#txtAuthor'),
@@ -190,8 +190,8 @@ var page2 = {
         // 以下为阿里云OSS空间信息，这些信息需要申请阿里云OSS空间后即可获取
         region: "oss-cn-beijing",
         // 相应的存储账号,已修改
-        accessKeyId: "LTAI5tJDTqYzssdfdsfgsijSjupxUz",
-        accessKeySecret: "3HHmj3DbsdfsdfsHvwfM3fbOS8770Yiehnie9",
+        accessKeyId: "LTAI5tJDTqYzghssdfdsfgsijSjupxUz",
+        accessKeySecret: "3HHmj3DbsdfsddfffsHvwfM3fbOS8770Yiehnie9",
         bucket: "whil",
       }
     );
