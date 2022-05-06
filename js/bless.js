@@ -189,8 +189,8 @@ var page2 = {
       {
         // 以下为阿里云OSS空间信息，这些信息需要申请阿里云OSS空间后即可获取
         region: "oss-cn-beijing",
-        accessKeyId: "LTAI5tJDTqYzsgsijSjupxUz",
-        accessKeySecret: "3HHmj3DbHvwfM3fbOS8770Yiehnie9",
+        accessKeyId: "",
+        accessKeySecret: "",
         bucket: "whil",
       }
     );
